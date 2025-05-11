@@ -1,3 +1,46 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --brown: #a0a0a0;
+}
+
+
+
+
+
+
+
+
+/* FONT-FACE */
+@font-face {
+    font-family: "League Spartan";
+    src: url("../fonts/LeagueSpartan-Medium.woff2") format("woff2"),
+      url("../fonts/LeagueSpartan-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url("../fonts/LeagueSpartan-Bold.woff2") format("woff2"),
+      url("../fonts/LeagueSpartan-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url("../fonts/LeagueSpartan-SemiBold.woff2") format("woff2"),
+      url("../fonts/LeagueSpartan-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 /* GLOBAL */
 html {
 box-sizing: border-box;
@@ -17,11 +60,13 @@ flex-direction: column;
 height: 100%;
 padding: 0;
 margin: 0;
-font-family: "Arial", sans-serif;
+font-family: "League Spartan", "Arial", sans-serif;
 font-size: 16px;
-line-height: 1.5;
-background-color: #fff;
-color: #222;
+line-height: 22px;
+font-weight: 500;
+letter-spacing: -0.33px;
+background-color: var(--white);
+color: var(--brown);
 }
 
 img {
@@ -74,12 +119,112 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
 width: 100%;
-max-width: 1200px;
-padding-left: 50px;
-padding-right: 50px;
+max-width: 1480px;
+padding-left: 20px;
+padding-right: 20px;
 margin-left: auto;
 margin-right: auto;
 }
+
+.layout-container {
+  display: flex;
+}
+
+/* SITENAV */
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.sitenav__item {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.67px;
+}
+
+.sitenav__link:hover::after {
+  display: block;
+}
+
+.sitenav__link::after {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  content: "";
+}
+
+
+/* LOGO */
+.logo {
+  display: flex;
+  width: 62px;
+  height: 13px;
+  margin-right: 57px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  width: 62px;
+  height: 13px;
+  object-fit: contain;
+}
+
+
+/* BUTTON */
+.button {
+  display: flex;
+  justify-content: flex-start;
+  width: 245px;
+  padding: 0;
+  border: 0;
+  color: var(--black);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--brown);
+}
+
+.button__text {
+  margin-right: 30px;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 12.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -87,8 +232,85 @@ margin-right: auto;
 }
 
 
+/* HEADER */
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 840px;
+  padding: 56px 64px 64px;
+  height: 534px;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.header__logo-wrapper {
+  padding-top: 8px;
+}
 
 
+/* HERO */
+.hero {
+  width: 100%;
+  max-width: 600px;
+  padding: 100px 120px;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 400px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 48px;
+  line-height: normal;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: var(--black);
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+
+/* ABOUT */
+.about__container {
+  display: flex;
+}
+
+.about__img-right {
+  width: 420px;
+  height: 266px;
+}
+
+.about__content {
+  width: 100%;
+  max-width: 580px;
+  padding: 68px 48px 58px;
+}
+
+.about__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 6.67px;
+  font-weight: bold;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about__img-left {
+  width: 420px;
+  height: 266px;
+}
 
 
 /* RETINA */
@@ -99,4 +321,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
+  .header {
+    background-image: url(../img/header-bg@2x.jpg);
+  }
 }

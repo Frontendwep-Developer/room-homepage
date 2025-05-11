@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Room-homepage</title>
 
 
   <!-- Stylesheets -->
@@ -12,7 +12,59 @@
 </head>
 <body>
 
+  <div class="layout-container container">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__logo-wrapper">
+        <a href="#" class="header__logo logo">
+        <img class="logo__img" src="img/logo.svg" alt="Room-homepage logo" width="62" height="13" srcset="">
+      </a>
+      </div>
 
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="#">home</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">shop</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">about</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content">
+      <h2 class="hero__heading"> Discover innovative ways to decorate </h2>
+      <p class="hero__text"> We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love. </p>
+
+        <button class="hero__button button" type="button">
+          <span class="button__text">Shop now</span>
+          <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="12" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M39.532 5.528 34.049 0l-.662.668 4.82 4.86H0v1h38.152l-4.765 4.804.662.668 5.428-5.472h.062v-.063L40 6l-.46-.465v-.007h-.008Z" clip-rule="evenodd"/></svg>
+          </div>
+      </button>
+    </section>
+  </div>
+
+
+  <!-- MAIN-CONTENT -->
+  <main class="main-content">
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about__container container">
+        <img class="about__img-right" src="img/chair-black.jpg" alt="Black chair and table" width="420" height="266" srcset="img/chair-black.jpg 1x,  img/chair-black@2x.jpg 2x">
+
+        <div class="about__content">
+          <h3 class="about__heading">About our furniture</h3>
+          <p class="about__text">Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>
+
+
+          <img class="about__img-left" src="img/chair-white.jpg" alt="White chair" width="440" height="266" srcset="img/chair-white.jpg 1x,  img/chair-white@2x.jpg 2x">
+      </div>
+    </section>
+  </main>
 
 
   <script src="js/main.js"></script>
