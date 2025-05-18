@@ -14,37 +14,97 @@
 
   <div class="layout-container container">
     <!-- HEADER -->
-    <header class="header">
-      <div class="header__logo-wrapper">
+    <header class="header" id="main-header">
+      <div class="header__content">
+        <div class="header__logo-wrapper">
         <a href="#" class="header__logo logo">
-        <img class="logo__img" src="img/logo.svg" alt="Room-homepage logo" width="62" height="13" srcset="">
-      </a>
+          <svg class="logo__img" alt="Room-homepage logo" xmlns="http://www.w3.org/2000/svg" width="62" height="14" fill="currentColor"><path fill="currentColor" fill-rule="evenodd" d="M2.988 5.352v7.32H0V.384h2.988v1.788C3.42 1.468 3.96.93 4.608.558A4.215 4.215 0 0 1 6.744 0c.408 0 .826.054 1.254.162.428.108.794.25 1.098.426L7.86 3.12a3.62 3.62 0 0 0-.918-.384 3.65 3.65 0 0 0-.966-.144c-.512 0-.996.132-1.452.396a3.36 3.36 0 0 0-1.11 1.02 2.338 2.338 0 0 0-.426 1.344Zm17.066 6.876c-1.068.552-2.266.828-3.594.828-1.328 0-2.526-.276-3.594-.828a6.45 6.45 0 0 1-2.538-2.304c-.624-.984-.936-2.116-.936-3.396 0-1.288.312-2.422.936-3.402A6.476 6.476 0 0 1 12.86.828C13.924.276 15.124 0 16.46 0c1.328 0 2.526.276 3.594.828a6.421 6.421 0 0 1 2.532 2.298c.62.98.93 2.114.93 3.402 0 1.28-.31 2.412-.93 3.396a6.406 6.406 0 0 1-2.532 2.304Zm-3.594-1.74c-.744 0-1.416-.17-2.016-.51a3.729 3.729 0 0 1-1.416-1.404c-.344-.596-.516-1.278-.516-2.046 0-.776.172-1.462.516-2.058a3.686 3.686 0 0 1 1.416-1.398c.6-.336 1.272-.504 2.016-.504.752 0 1.426.168 2.022.504a3.698 3.698 0 0 1 1.41 1.398c.344.596.516 1.282.516 2.058 0 .768-.172 1.45-.516 2.046a3.741 3.741 0 0 1-1.41 1.404c-.596.34-1.27.51-2.022.51Zm19.298 1.74c-1.068.552-2.266.828-3.594.828-1.328 0-2.526-.276-3.594-.828a6.45 6.45 0 0 1-2.538-2.304c-.624-.984-.936-2.116-.936-3.396 0-1.288.312-2.422.936-3.402A6.476 6.476 0 0 1 28.564.828C29.628.276 30.828 0 32.164 0c1.328 0 2.526.276 3.594.828a6.421 6.421 0 0 1 2.532 2.298c.62.98.93 2.114.93 3.402 0 1.28-.31 2.412-.93 3.396a6.406 6.406 0 0 1-2.532 2.304Zm-3.594-1.74c-.744 0-1.416-.17-2.016-.51a3.729 3.729 0 0 1-1.416-1.404c-.344-.596-.516-1.278-.516-2.046 0-.776.172-1.462.516-2.058a3.686 3.686 0 0 1 1.416-1.398c.6-.336 1.272-.504 2.016-.504.752 0 1.426.168 2.022.504a3.698 3.698 0 0 1 1.41 1.398c.344.596.516 1.282.516 2.058 0 .768-.172 1.45-.516 2.046a3.741 3.741 0 0 1-1.41 1.404c-.596.34-1.27.51-2.022.51Zm12.608-5.592v7.776h-2.988V.384h2.988V1.86c.568-.632 1.166-1.1 1.794-1.404A4.687 4.687 0 0 1 48.636 0c.968 0 1.83.22 2.586.66.756.44 1.29 1.032 1.602 1.776.552-.784 1.18-1.386 1.884-1.806.704-.42 1.52-.63 2.448-.63.88 0 1.662.182 2.346.546a4.051 4.051 0 0 1 1.62 1.56c.396.676.594 1.49.594 2.442v8.124h-2.988V5.364c0-.912-.238-1.634-.714-2.166S56.9 2.4 56.1 2.4c-.544 0-1.032.116-1.464.348-.432.232-.772.54-1.02.924a2.237 2.237 0 0 0-.372 1.236v7.764h-2.988V5.244c0-.864-.232-1.554-.696-2.07-.464-.516-1.096-.774-1.896-.774-.552 0-1.046.116-1.482.348-.436.232-.78.538-1.032.918s-.378.79-.378 1.23Z" clip-rule="evenodd"/></svg>
+          <!-- <img class="logo__img" src="img/logo.svg" alt="Room-homepage logo" width="62" height="13" loading="lazy"> -->
+        </a>
       </div>
 
-      <nav class="sitenav">
-        <ul class="sitenav__list">
-          <li class="sitenav__item"><a class="sitenav__link" href="#">home</a></li>
-          <li class="sitenav__item"><a class="sitenav__link" href="#">shop</a></li>
-          <li class="sitenav__item"><a class="sitenav__link" href="#">about</a></li>
-          <li class="sitenav__item"><a class="sitenav__link" href="#">contact</a></li>
-        </ul>
-      </nav>
 
+
+      <!-- Faqat bitta button qoldiring -->
+      <button class="header__sitenav-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <svg class="toggler__icon menu-icon" viewBox="0 0 20 14" width="20" height="14">
+          <path fill="currentColor" fill-rule="evenodd" d="M0 0h20v2H0V0Zm0 6h20v2H0V6Zm20 6H0v2h20v-2Z" clip-rule="evenodd"/>
+        </svg>
+        <svg class="toggler__icon close-icon" viewBox="0 0 20 20" width="20" height="14">
+          <path stroke="currentColor" stroke-width="2" d="M1 1l18 18M19 1L1 19"/>
+        </svg>
+      </button>
+
+      <div class="header__sitenav">
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item"><a class="sitenav__link" href="#">home</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">shop</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">about</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
-      <div class="hero__content">
-      <h2 class="hero__heading"> Discover innovative ways to decorate </h2>
-      <p class="hero__text"> We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love. </p>
+      <!-- SLIDE 1 -->
+      <div class="hero__slide slide"   data-bg="img/white-chairs-bg.jpg" data-bg-retina="img/white-chairs-bg@2x.jpg">
+        <div class="slide__content">
+          <h2 class="slide__heading">Discover innovative ways to decorate</h2>
+          <p class="slide__text">We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+        </div>
 
-        <button class="hero__button button" type="button">
-          <span class="button__text">Shop now</span>
-          <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="12" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M39.532 5.528 34.049 0l-.662.668 4.82 4.86H0v1h38.152l-4.765 4.804.662.668 5.428-5.472h.062v-.063L40 6l-.46-.465v-.007h-.008Z" clip-rule="evenodd"/></svg>
-          </div>
-      </button>
+        <button class="slide__button button" type="button">
+            <span class="button__text">Shop now</span>
+            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="12" fill="none" aria-hidden="true">
+              <path fill="currentColor" fill-rule="evenodd" d="M39.532 5.528 34.049 0l-.662.668 4.82 4.86H0v1h38.152l-4.765 4.804.662.668 5.428-5.472h.062v-.063L40 6l-.46-.465v-.007h-.008Z" clip-rule="evenodd"/>
+            </svg>
+        </button>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="hero__slide slide" data-bg="img/yellow-chairs-bg.jpg" data-bg-retina="img/yellow-chairs-bg@2x.jpg">
+        <div class="slide__content">
+          <h2 class="slide__heading">We are available all across the globe</h2>
+          <p class="slide__text">With stores all over the world, it&rsquo;s easy for you to find furniture for your home or place of business. Locally, we&rsquo;re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don&rsquo;t hesitate to contact us today.</p>
+        </div>
+
+        <button class="slide__button button" type="button">
+            <span class="button__text">Shop now</span>
+            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="12" fill="none" aria-hidden="true">
+              <path fill="currentColor" fill-rule="evenodd" d="M39.532 5.528 34.049 0l-.662.668 4.82 4.86H0v1h38.152l-4.765 4.804.662.668 5.428-5.472h.062v-.063L40 6l-.46-.465v-.007h-.008Z" clip-rule="evenodd"/>
+            </svg>
+        </button>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="hero__slide slide" data-bg="img/black-chairs-bg.jpg" data-bg-retina="img/black-chairs-bg@2x.jpg">
+        <div class="slide__content">
+          <h2 class="slide__heading">Manufactured with the best materials</h2>
+          <p class="slide__text">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
+        </div>
+
+        <button class="slide__button button" type="button">
+            <span class="button__text">Shop now</span>
+            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="12" fill="none" aria-hidden="true">
+              <path fill="currentColor" fill-rule="evenodd" d="M39.532 5.528 34.049 0l-.662.668 4.82 4.86H0v1h38.152l-4.765 4.804.662.668 5.428-5.472h.062v-.063L40 6l-.46-.465v-.007h-.008Z" clip-rule="evenodd"/>
+            </svg>
+        </button>
+      </div>
+
+      <!-- SLIDER-CONTROLS -->
+      <div class="hero__slider-controls slider-controls">
+        <button class="slider-controls__button slider-controls__button--prev " type="button" aria-label="Previous slide">
+          <img class="slider-controls__button-img" src="img/left-icon.svg" alt="" width="12" height="24" loading="lazy">
+        </button>
+        <button class="slider-controls__button slider-controls__button--next" type="button" aria-label="Next slide">
+          <img class="slider-controls__icon" src="img/right-icon.svg" alt="" width="12" height="24" loading="lazy">
+        </button>
+      </div>
     </section>
-  </div>
+</div>
 
 
   <!-- MAIN-CONTENT -->
