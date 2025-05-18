@@ -400,6 +400,7 @@ only screen and (                min-resolution: 2dppx) {
   .hero {
     width: 100%;
     max-width: 840px;
+    margin-bottom: 410px;
   }
 
   .hero__slide {
