@@ -8,39 +8,38 @@
 
 /* FONT-FACE */
 @font-face {
-    font-family: "League Spartan";
-    src: url("../fonts/LeagueSpartan-Medium.woff2") format("woff2"),
-      url("../fonts/LeagueSpartan-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Medium.woff2") format("woff2"),
+    url("../fonts/LeagueSpartan-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "League Spartan";
-    src: url("../fonts/LeagueSpartan-Bold.woff2") format("woff2"),
-      url("../fonts/LeagueSpartan-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Bold.woff2") format("woff2"),
+    url("../fonts/LeagueSpartan-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "League Spartan";
-    src: url("../fonts/LeagueSpartan-SemiBold.woff2") format("woff2"),
-      url("../fonts/LeagueSpartan-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-SemiBold.woff2") format("woff2"),
+    url("../fonts/LeagueSpartan-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
-
 
 
 /* GLOBAL */
 html {
-box-sizing: border-box;
-height: 100%;
-scroll-behavior: smooth;
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -50,24 +49,24 @@ scroll-behavior: smooth;
 }
 
 body {
-display: flex;
-flex-direction: column;
-height: 100%;
-padding: 0;
-margin: 0;
-font-family: var(--main-fonts);
-font-size: 16px;
-line-height: 22px;
-font-weight: 500;
-letter-spacing: -0.33px;
-background-color: var(--white);
-color: var(--brown);
-overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-fonts);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  background-color: var(--white);
+  color: var(--brown);
+  overflow-x: hidden;
 }
 
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -114,12 +113,12 @@ select:-webkit-autofill:focus {
 
 /* CONTAINER */
 .container {
-width: 100%;
-max-width: 1480px;
-padding-left: 20px;
-padding-right: 20px;
-margin-left: auto;
-margin-right: auto;
+  width: 100%;
+  max-width: 1480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .layout-container {
@@ -134,7 +133,6 @@ margin-right: auto;
   margin: 0;
   list-style: none;
 }
-
 
 .sitenav__item {
   position: relative;
@@ -224,22 +222,16 @@ margin-right: auto;
 
 /* TOGGLER */
 .header__sitenav-toggler {
-    display: none;
+  display: none;
 }
-
-.toggler {
-}
-.toggler__icon {
-}
-
 
 
 /* SLIDE */
 .slide__content {
   position: relative;
   width: 100%;
-  height: 100%;
   max-width: 400px;
+  margin-bottom: 26px;
 }
 
 .slide__heading {
@@ -254,25 +246,7 @@ margin-right: auto;
 
 .slide__text {
   margin-top: 0;
-  margin-bottom: 26px;
 }
-
-/* SLIDE-BUTTON */
-.slide__button {
-  position: absolute;
-  bottom: 275px;
-  left: 0;
-  z-index: 10;
-}
-
-/* .slide__button {
-  position: relative;
-  bottom: auto;
-  left: auto;
-  margin-top: 30px;
-  width: 100%;
-  max-width: 245px;
-} */
 
 
 /* SLIDER-CONTROLS */
@@ -331,7 +305,6 @@ margin-right: auto;
   height: 13px;
   padding-top: 8px;
   margin-right: 57px;
-
 }
 
 
@@ -340,14 +313,7 @@ margin-right: auto;
   position: relative;
   width: 100%;
   max-width: 600px;
-  padding: 100px 120px 154px;
 }
-
-/* .hero {
-  max-width: 100%;
-  padding: 50px 20px;
-} */
-
 
 .hero__slide {
   position: absolute;
@@ -355,8 +321,6 @@ margin-right: auto;
   visibility: hidden;
   top: 120px;
   left: 100px;
-  width: 100%;
-  height: 100%;
   transition: opacity 0.5s ease;
 }
 
@@ -423,6 +387,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
+/* MAX-WIDTH-1300 */
 @media only screen and (max-width: 1300px) {
   .layout-container {
     display: flex;
@@ -431,29 +396,28 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
   }
 
+  /* hero */
   .hero {
     width: 100%;
-    max-width: 800px;
-    padding-bottom: 450px;
-    padding: 68px 48px 450px;
+    max-width: 840px;
   }
 
   .hero__slide {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
+    left: 0;
+    top: 80px;
+    padding: 0 50px;
   }
 
   .slide__content {
     max-width: 800px;
-    padding: 68px 48px 58px;
   }
 
   .hero__slider-controls {
-    right: 0;
-    top: -81px;
+    top: -80px;
   }
 
+
+  /* about */
   .about__container {
     display: flex;
     flex-direction: column;
@@ -474,22 +438,14 @@ only screen and (                min-resolution: 2dppx) {
     width: 800px;
     height: 500px;
   }
-
 }
 
+
+/* MAX-WIDTH-950 */
 @media only screen and (max-width: 950px) {
-  .hero__slide {
-    left: 50px;
-  }
-
-  .slide__content {
-    max-width: 500px;
-    margin-left: 250px;
-    margin-right: 200px;
-  }
-
-  .slide__button {
-    margin-left: 256px;
+  /* hero */
+  .hero__slider-controls{
+    padding-right: 20px;
   }
 
   .about__img-right {
@@ -508,7 +464,27 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
+/* MAX-WIDTH-630 */
+@media only screen and (max-width: 630px) {
+  .slide__heading {
+    font-size: 40px;
+    letter-spacing: -1.67px;
+  }
+
+
+  .hero__slider-controls {
+    top: -70px;
+  }
+  .slider-controls__button {
+    width: 70px;
+    height: 70px;
+}
+}
+
+
+/* MAX-WIDTH-530 */
 @media only screen and (max-width: 530px) {
+  /* header */
   .header {
     position: relative;
     z-index: 1;
@@ -527,7 +503,7 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
   }
 
-    .header--open  .header__content {
+  .header--open  .header__content {
     width: 100%;
     max-width: 500px;
     padding: 56px 24px 150px;
@@ -553,14 +529,13 @@ only screen and (                min-resolution: 2dppx) {
     border: 0;
   }
 
+  .header__sitenav-toggler[aria-expanded="true"] .menu-icon {
+    display: none;
+  }
 
-.header__sitenav-toggler[aria-expanded="true"] .menu-icon {
-  display: none;
-}
-
-.header__sitenav-toggler[aria-expanded="true"] .close-icon {
-  display: block;
-}
+  .header__sitenav-toggler[aria-expanded="true"] .close-icon {
+    display: block;
+  }
 
   .menu-icon {
     display: flex;
@@ -570,12 +545,12 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .close-icon {
-  display: none;
-  width: 20px;
-  height: 14px;
-  stroke: var(--brown); /* Yoki #fff - dizaynga qarab */
-  stroke-width: 2;
-}
+    display: none;
+    width: 20px;
+    height: 14px;
+    stroke: var(--brown);
+    stroke-width: 2;
+  }
 
   .header__sitenav {
     display: none;
@@ -591,6 +566,8 @@ only screen and (                min-resolution: 2dppx) {
     padding-left: 24px;
   }
 
+
+  /* sitenav */
   .sitenav__list {
     flex-direction: column;
   }
@@ -607,8 +584,6 @@ only screen and (                min-resolution: 2dppx) {
     opacity: 0.4;
   }
 
-
-
   .sitenav__item:not(:last-child) {
     margin-right: 0;
   }
@@ -617,18 +592,25 @@ only screen and (                min-resolution: 2dppx) {
     color: var(--black);
   }
 
+
+  /* hero */
   .hero__slide {
-    margin-left: 100px;
+    top: 70px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
-  .slide__content {
-    max-width: 400px;
+  .hero__slider-controls {
+    z-index: 999;
   }
 
-  .slide__button {
-    margin-left: 256px;
+  .button__text {
+    margin-right: 12px;
+    letter-spacing: 7px;
   }
 
+
+  /* about */
   .about__img-right {
     width: 420px;
     height: 266px;
@@ -641,5 +623,31 @@ only screen and (                min-resolution: 2dppx) {
   .about__img-left {
     width: 420px;
     height: 266px;
+  }
+}
+
+
+/* MAX-WIDTH-430 */
+@media only screen and (max-width: 430px) {
+  .hero__slide {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .slide__heading {
+    font-size: 35px;
+  }
+}
+
+
+/* MAX-WIDTH-330 */
+@media only screen and (max-width: 330px) {
+  .hero__slide {
+    top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .slide__heading {
+    font-size: 30px;
   }
 }
