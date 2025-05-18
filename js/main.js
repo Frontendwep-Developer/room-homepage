@@ -15,8 +15,6 @@ if (elHeaderSitenavToggler) {
 
 
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll('.hero__slide');
   const prevBtn = document.querySelector('.slider-controls__button--prev');
@@ -75,19 +73,3 @@ document.addEventListener('DOMContentLoaded', function() {
     updateHeaderBackground(slides[currentSlide]);
   });
 });
-
-
-
-
-/* // Faqat faol slayd tugmasini ko'rsatish
-function showSlide(index) {
-  // Barcha tugmalarni yashirish
-  document.querySelectorAll('.slide__button').forEach(btn => {
-    btn.style.display = 'none';
-  });
-
-  // Faqat joriy slayd tugmasini ko'rsatish
-  const currentSlide = document.querySelectorAll('.hero__slide')[index];
-  const currentBtn = currentSlide.querySelector('.slide__button');
-  currentBtn.style.display = 'block';
-} */
