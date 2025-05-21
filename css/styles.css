@@ -722,7 +722,7 @@ only screen and (                min-resolution: 2dppx) {
 /* MAX-WIDTH-380 */
 @media only screen and (max-width: 380px) {
   .header {
-    padding-bottom: 260px;
+    padding-bottom: 240px;
   }
 
   .about__img {
